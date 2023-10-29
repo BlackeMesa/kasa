@@ -1,0 +1,21 @@
+.notfound h1{
+font-size: 13rem;
+    color: #ff6060;
+    @media screen and (max-width: 1000px){
+      font-size: 5rem;
+     }
+}
+.notfound p{
+
+    color: #ff6060;
+    font-size: 1.5rem;
+    text-align: center;
+    @media screen and (max-width: 1000px){
+      font-size: 1.2rem;
+     }
+}
+.notfound a{
+
+    color: #ff6060;
+       margin: 50px 0 100px 0;
+}

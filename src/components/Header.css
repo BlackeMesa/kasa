@@ -1,0 +1,38 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  background-color: #fff;
+  @media screen and (max-width: 1000px){
+    padding: 20px 20px;
+  }
+}
+
+
+.app-logo img{
+   @media screen and (max-width: 1000px){
+    width: 100px;
+  }
+}
+
+.app-nav a {
+  margin-left: 50px;
+    text-decoration: none;
+    color: #ff6060;
+    transition: color 0.2s;
+    font-size: 25px;
+     @media screen and (max-width: 1000px){
+    margin-left: 10px;
+    font-size: 15px;
+  }
+
+}
+
+.app-nav a:hover {
+  color: #e76f51;
+}
+.active {
+  text-decoration: underline!important;
+  
+}

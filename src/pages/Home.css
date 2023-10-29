@@ -1,0 +1,70 @@
+
+.logement-container{
+    background: #F6F6F6;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 15px;
+}
+.logement-card{
+       width: 28%;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    @media screen and (max-width: 1000px){
+        width: 250px;
+        height: 250px;
+        
+    }
+   
+}
+.logement-card a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+     text-decoration: none;
+     display: flex;
+}
+.logement-card img{
+    width: inherit;
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+    height: 100%;
+        border-radius: 10px;
+}
+.logement-card p{
+    position: relative;
+    z-index: 4;
+    font-size: 15px;
+    align-self: end;
+    color: white!important;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.shadow-box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+     z-index: 3;
+       border-radius: 10px;
+}
+.shadow-cover{
+    background:  rgba(0, 0, 0, 0.35) ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shadow-cover h1{
+    color: white!important;
+    margin: 0;
+     @media screen and (max-width: 1000px){
+        margin-left: 10px;
+      font-size: 20px;
+     }
+}

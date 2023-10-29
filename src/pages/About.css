@@ -1,0 +1,26 @@
+.listing-fonction .container-button{
+    width: 85%!important;
+    @media screen and (max-width: 600px){
+      width:  100%!important;
+      margin-top: 10px;
+     }
+}
+.listing-images.about{
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    @media screen and (max-width: 1000px){
+    height: 100px;
+  }
+}
+.listing-fonction{
+    @media screen and (max-width: 600px){
+      
+      margin-top: 20px;
+     }
+}
+
+.listing-images.about img{
+    position: absolute;
+}

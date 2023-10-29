@@ -1,0 +1,125 @@
+.listing-details {
+  flex: 2;
+}
+
+.listing-details h1 {
+  font-size: 40px;
+  color: #ff6060;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  @media screen and (max-width: 1000px) {
+    font-size: 20px;
+  }
+}
+
+.listing-details p {
+  font-size: 18px;
+  color: #ff6060;
+  margin-bottom: 20px;
+}
+
+.tags {
+  display: flex;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags span {
+  background-color: #ff6060;
+  padding: 1px 35px;
+  margin-right: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: white;
+  @media screen and (max-width: 1000px) {
+    font-size: 10px;
+    padding: 1px 25px;
+    margin-right: 0px;
+  }
+}
+
+.listing-host {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.listing-host span {
+  color: #ff6060;
+  width: 80px;
+  text-align: end;
+  margin-right: 10px;
+}
+
+.host-avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+  border-radius: 50%;
+  margin-right: 15px;
+  overflow: hidden;
+}
+.host-avatar img {
+  width: inherit;
+}
+
+.rating {
+  margin-left: auto;
+  /* Ici, ajoutez le style de vos étoiles */
+}
+.listing-images {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 400px;
+  @media screen and (max-width: 1000px) {
+    height: 300px;
+  }
+}
+.image-counter {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.listing-images button {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  font-size: 24px;
+  padding: 10px 20px;
+  margin: 0;
+  cursor: pointer;
+  transition: background 0.3s;
+  position: absolute;
+  font-size: 100px;
+  background: none;
+  @media screen and (max-width: 1000px) {
+    font-size: 40px;
+  }
+}
+.listing-images button.left {
+  margin-right: auto;
+  left: 0;
+}
+.listing-images button.right {
+  margin-left: auto;
+  right: 0;
+}
+
+.listing-images button:hover {
+  background: rgba(255, 96, 96, 0.7);
+  color: white;
+}
+
+.listing-images img {
+  height: 100%;
+  object-fit: cover;
+}
