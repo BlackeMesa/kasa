@@ -4,6 +4,16 @@
     padding-top: 50px;
     padding-bottom: 50px;
     border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+      @media screen and (min-width: 500px){
+       margin-top: 15px;
+        
+    }
+    
 }
 .logement-card{
        width: 28%;
@@ -16,6 +26,9 @@
         
     }
    
+}
+.about{
+    position: relative;
 }
 .logement-card a{
     width: 100%;

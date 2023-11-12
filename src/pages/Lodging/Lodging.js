@@ -1,7 +1,8 @@
 import React from "react";
 import "./Lodging.css";
-import ToggleButton from "../components/ToggleButton";
-import data from "../data/data.json";
+import ToggleButton from "../../components/ToggleButton/ToggleButton.js";
+import StarRating from "../../components/StarRating/StarRating.js";
+import data from "../../data/data.json";
 import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -48,7 +49,7 @@ function Lodging() {
           </button>
         )}
       </div>
-      <div className="d-sm-flex">
+      <div className="listing-container">
         <div className="listing-details">
           <h1>{logement.title}</h1>
           <p>{logement.location}</p>
@@ -59,15 +60,20 @@ function Lodging() {
           </div>
         </div>
         <div className="listing-host">
+          <div className="listing-host-name">
+
           <span>{logement.host.name}</span>
           <div className="host-avatar">
             <img src={logement.host.picture} alt="picture-host" />
           </div>
-          {/* Placeholder pour l'avatar de l'hôte */}
-          <div className="rating">{/* Ici, vous pouvez ajouter des étoiles pour la notation */}</div>
+          </div>
+
+          <div className="rating">
+            <StarRating rating={parseInt(logement.rating)} />
+          </div>
         </div>
       </div>
-      <div className="listing-fonction d-sm-flex justify-content-between gap-5">
+      <div className="listing-fonction ">
         <ToggleButton text="Description" description={logement.description} />
         <ToggleButton text="Équipements" description={logement.equipments} />
       </div>

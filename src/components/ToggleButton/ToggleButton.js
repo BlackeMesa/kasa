@@ -18,11 +18,11 @@ function ToggleButton({ text, description }) {
 
   return (
     <div className="container-button">
-      <button className="toggle-btn w-100 d-flex align-items-center justify-content-between " onClick={() => setShowDescription(!showDescription)}>
+      <button className="toggle-btn" onClick={() => setShowDescription(!showDescription)}>
         {text}
         <span className={`arrow ${showDescription ? "down" : "up"}`}></span>
       </button>
-      <div className={`description d-flex  flex-column ${showDescription ? "show-description" : ""}`}>{renderDescription()}</div>
+      <div className={`description ${showDescription ? "show-description" : ""}`}>{renderDescription()}</div>
     </div>
   );
 }

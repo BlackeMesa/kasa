@@ -1,7 +1,13 @@
 .listing-details {
   flex: 2;
 }
-
+.listing-fonction{
+  justify-content: space-between;
+  gap: 15px;
+@media screen and (min-width: 500px) {
+    display: flex;
+  }
+}
 .listing-details h1 {
   font-size: 40px;
   color: #ff6060;
@@ -41,8 +47,20 @@
 
 .listing-host {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  align-items: end;
   margin-top: 30px;
+  @media screen and (max-width: 1000px) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+  }
+}
+.listing-host-name{
+  display: flex;
+  align-items: center;
 }
 .listing-host span {
   color: #ff6060;
@@ -56,16 +74,17 @@
   height: 50px;
   background-color: #eee;
   border-radius: 50%;
-  margin-right: 15px;
+
   overflow: hidden;
 }
 .host-avatar img {
   width: inherit;
 }
 
-.rating {
-  margin-left: auto;
-  /* Ici, ajoutez le style de vos étoiles */
+.listing-container{
+  @media screen and (min-width: 1000px) {
+    display: flex;
+  }
 }
 .listing-images {
   position: relative;

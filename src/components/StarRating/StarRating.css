@@ -1,0 +1,9 @@
+.stars{
+    display: flex;
+    gap: 15px;
+}
+.stars img{
+    @media screen and (max-width: 450px) {
+    width: 15px;
+  }
+}
