@@ -1,13 +1,13 @@
 import React from 'react'
 import "./NotFound.css"
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 function NotFound() {
   return (
     <div className='notfound'>
       <h1>404</h1>
       <p >Oups! La page que vous demandez n'existe pas.</p>
-      <Link  to="/">Retourner sur la page d’accueil</Link>
+      <NavLink  to="/">Retourner sur la page d’accueil</NavLink>
     </div>
   );
 }

@@ -64,7 +64,7 @@ function Lodging() {
 
           <span>{logement.host.name}</span>
           <div className="host-avatar">
-            <img src={logement.host.picture} alt="picture-host" />
+            <img src={logement.host.picture} alt="host" />
           </div>
           </div>
 

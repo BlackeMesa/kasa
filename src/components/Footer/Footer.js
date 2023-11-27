@@ -5,7 +5,7 @@ function Footer() {
   return <footer className="app-footer">
     <div className="img-container">
 
-    <img src="img/logo.png" alt="" />
+    <img src="img/logo.png" alt="logo" />
     </div>
     <span>
 
